@@ -15,4 +15,4 @@ List Spider yg tersedia
 3. series_list
 4. category
 
-> scrapy crawl <spider> -o item.csv
+> scrapy crawl (spider) -o item.csv
