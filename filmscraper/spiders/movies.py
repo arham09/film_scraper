@@ -21,9 +21,9 @@ class MoviesSpider(scrapy.Spider):
             movie_url = response.urljoin(movie)
             yield Request(movie_url, callback=self.parse_movie)
 
-        next_url = response.xpath('.//div[@class="filmcontent"]/div[@class="wp-pagenavi"]/a[@class="nextpostslink"]/@href').extract_first()
-        absolute_next_url = response.urljoin(next_url)
-        yield Request(absolute_next_url, callback=self.parse)
+        # next_url = response.xpath('.//div[@class="filmcontent"]/div[@class="wp-pagenavi"]/a[@class="nextpostslink"]/@href').extract_first()
+        # absolute_next_url = response.urljoin(next_url)
+        # yield Request(absolute_next_url, callback=self.parse)
 
     def parse_movie(self, response):
         title = response.xpath(".//div[@class='filmcontent']/h1/text()").extract_first()
@@ -56,23 +56,23 @@ class MoviesSpider(scrapy.Spider):
         }
 
 
-    def close(self, reason):
-        csv_file = max(glob.iglob('*.csv'), key=os.path.getctime)
+    # def close(self, reason):
+    #     csv_file = max(glob.iglob('*.csv'), key=os.path.getctime)
 
-        mydb = MySQLdb.connect(host='localhost', user='root', password='root', db='movies_list', charset='utf8')
-        cursor = mydb.cursor()
+    #     mydb = MySQLdb.connect(host='localhost', user='root', password='root', db='movies_list', charset='utf8')
+    #     cursor = mydb.cursor()
 
-        csv_data = csv.reader(open(csv_file))
+    #     csv_data = csv.reader(open(csv_file))
 
-        row_count = 0
-        for row in csv_data:
-            if row_count != 0:
-                cursor.execute(
-                    'INSERT INTO movies (title, genre, stars, director, sinopsis, rating, views, image, video, created_at) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, NOW())', row)
-            row_count += 1
+    #     row_count = 0
+    #     for row in csv_data:
+    #         if row_count != 0:
+    #             cursor.execute(
+    #                 'INSERT INTO movies (title, genre, stars, director, sinopsis, rating, views, image, video, created_at) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, NOW())', row)
+    #         row_count += 1
 
-        mydb.commit()
-        cursor.close() 
+    #     mydb.commit()
+    #     cursor.close() 
 
     def clean_text(self, text):
         text = re.sub(r"<.*?>", "", text)

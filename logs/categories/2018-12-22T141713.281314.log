@@ -1,0 +1,79 @@
+2018-12-22 14:17:13 [scrapy] DEBUG: Redirecting (301) to <GET https://bioskopkeren.fun/> from <GET http://bioskopkeren.fun/>
+2018-12-22 14:17:13 [scrapy] DEBUG: Crawled (200) <GET https://bioskopkeren.fun/> (referer: None)
+2018-12-22 14:17:14 [scrapy] DEBUG: Scraped from <200 https://bioskopkeren.fun/>
+{'Category': 'Action'}
+2018-12-22 14:17:14 [scrapy] DEBUG: Scraped from <200 https://bioskopkeren.fun/>
+{'Category': 'Adventure'}
+2018-12-22 14:17:14 [scrapy] DEBUG: Scraped from <200 https://bioskopkeren.fun/>
+{'Category': 'Asia'}
+2018-12-22 14:17:14 [scrapy] DEBUG: Scraped from <200 https://bioskopkeren.fun/>
+{'Category': 'Biography'}
+2018-12-22 14:17:14 [scrapy] DEBUG: Scraped from <200 https://bioskopkeren.fun/>
+{'Category': 'Cartoon'}
+2018-12-22 14:17:14 [scrapy] DEBUG: Scraped from <200 https://bioskopkeren.fun/>
+{'Category': 'Chinese'}
+2018-12-22 14:17:14 [scrapy] DEBUG: Scraped from <200 https://bioskopkeren.fun/>
+{'Category': 'Comedy'}
+2018-12-22 14:17:14 [scrapy] DEBUG: Scraped from <200 https://bioskopkeren.fun/>
+{'Category': 'Crime'}
+2018-12-22 14:17:14 [scrapy] DEBUG: Scraped from <200 https://bioskopkeren.fun/>
+{'Category': 'Drama'}
+2018-12-22 14:17:14 [scrapy] DEBUG: Scraped from <200 https://bioskopkeren.fun/>
+{'Category': 'Family'}
+2018-12-22 14:17:14 [scrapy] DEBUG: Scraped from <200 https://bioskopkeren.fun/>
+{'Category': 'Fantasy'}
+2018-12-22 14:17:14 [scrapy] DEBUG: Scraped from <200 https://bioskopkeren.fun/>
+{'Category': 'Hindi'}
+2018-12-22 14:17:14 [scrapy] DEBUG: Scraped from <200 https://bioskopkeren.fun/>
+{'Category': 'History'}
+2018-12-22 14:17:14 [scrapy] DEBUG: Scraped from <200 https://bioskopkeren.fun/>
+{'Category': 'Horror'}
+2018-12-22 14:17:14 [scrapy] DEBUG: Scraped from <200 https://bioskopkeren.fun/>
+{'Category': 'Japan'}
+2018-12-22 14:17:14 [scrapy] DEBUG: Scraped from <200 https://bioskopkeren.fun/>
+{'Category': 'Koleksi'}
+2018-12-22 14:17:14 [scrapy] DEBUG: Scraped from <200 https://bioskopkeren.fun/>
+{'Category': 'Korea-2'}
+2018-12-22 14:17:14 [scrapy] DEBUG: Scraped from <200 https://bioskopkeren.fun/>
+{'Category': 'Movie'}
+2018-12-22 14:17:14 [scrapy] DEBUG: Scraped from <200 https://bioskopkeren.fun/>
+{'Category': 'Music'}
+2018-12-22 14:17:14 [scrapy] DEBUG: Scraped from <200 https://bioskopkeren.fun/>
+{'Category': 'Mystery'}
+2018-12-22 14:17:14 [scrapy] DEBUG: Scraped from <200 https://bioskopkeren.fun/>
+{'Category': 'Romance'}
+2018-12-22 14:17:14 [scrapy] DEBUG: Scraped from <200 https://bioskopkeren.fun/>
+{'Category': 'Sci-fi'}
+2018-12-22 14:17:14 [scrapy] DEBUG: Scraped from <200 https://bioskopkeren.fun/>
+{'Category': 'Sport'}
+2018-12-22 14:17:14 [scrapy] DEBUG: Scraped from <200 https://bioskopkeren.fun/>
+{'Category': 'Thailand'}
+2018-12-22 14:17:14 [scrapy] DEBUG: Scraped from <200 https://bioskopkeren.fun/>
+{'Category': 'Thriller'}
+2018-12-22 14:17:14 [scrapy] DEBUG: Scraped from <200 https://bioskopkeren.fun/>
+{'Category': 'Tv-series'}
+2018-12-22 14:17:14 [scrapy] DEBUG: Scraped from <200 https://bioskopkeren.fun/>
+{'Category': 'War'}
+2018-12-22 14:17:14 [scrapy] INFO: Closing spider (finished)
+2018-12-22 14:17:14 [scrapy] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 430,
+ 'downloader/request_count': 2,
+ 'downloader/request_method_count/GET': 2,
+ 'downloader/response_bytes': 9391,
+ 'downloader/response_count': 2,
+ 'downloader/response_status_count/200': 1,
+ 'downloader/response_status_count/301': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 12, 22, 7, 17, 14, 87558),
+ 'item_scraped_count': 27,
+ 'log_count/DEBUG': 29,
+ 'log_count/INFO': 6,
+ 'memusage/max': 63709184,
+ 'memusage/startup': 63709184,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 2,
+ 'scheduler/dequeued/memory': 2,
+ 'scheduler/enqueued': 2,
+ 'scheduler/enqueued/memory': 2,
+ 'start_time': datetime.datetime(2018, 12, 22, 7, 17, 13, 303517)}
+2018-12-22 14:17:14 [scrapy] INFO: Spider closed (finished)

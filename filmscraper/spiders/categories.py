@@ -29,22 +29,22 @@ class CategoriesSpider(scrapy.Spider):
                 "Category" : category
             }
 
-    def close(self, reason):
-        csv_file = max(glob.iglob('*.csv'), key=os.path.getctime)
+    # def close(self, reason):
+    #     csv_file = max(glob.iglob('*.csv'), key=os.path.getctime)
 
-        mydb = MySQLdb.connect(host='localhost', user='root', password='root', db='movies_list', charset='utf8')
-        cursor = mydb.cursor()
+    #     mydb = MySQLdb.connect(host='localhost', user='root', password='root', db='movies_list', charset='utf8')
+    #     cursor = mydb.cursor()
 
-        csv_data = csv.reader(open(csv_file))
+    #     csv_data = csv.reader(open(csv_file))
 
-        row_count = 0
-        for row in csv_data:
-            if row_count != 0:
-                cursor.execute('INSERT INTO category_list (name_category) VALUES (%s)', row)
-            row_count += 1
+    #     row_count = 0
+    #     for row in csv_data:
+    #         if row_count != 0:
+    #             cursor.execute('INSERT INTO category_list (name_category) VALUES (%s)', row)
+    #         row_count += 1
 
-        mydb.commit()
-        cursor.close() 
+    #     mydb.commit()
+    #     cursor.close() 
 
     def clean_text(self, text):
         text = text.replace('https://bioskopkeren.fun/', '')
